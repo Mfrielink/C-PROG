@@ -12,7 +12,7 @@ void readFile(){
 			perror("Error opening file; File is empty");
 			return(-1);
 		}
-		while (!feof(file) ){
+		while (!feof(file)){
 			if(fgets(line, CHUNK, file) != NULL){
 				printf("%s \n", line);
 			}
@@ -32,10 +32,14 @@ char *readLine(int lineNumber){
 		perror("Error opening file; File is empty");
 		return(-1);
 	}
-	while (!feof(file) && lineNumber > lineCounter){
+	while (lineNumber > lineCounter){
 		
 			if (fgets(line, CHUNK, file) != NULL){
-				if ((lineNumber - 1) == lineCounter){
+				if (feof(file)){
+					fclose(file);
+					return "empty";
+				}
+				if ((lineNumber - 1) == lineCounter && !feof(file)){
 				tmp = line;
 			}
 				tmp = line;
@@ -44,7 +48,6 @@ char *readLine(int lineNumber){
 	}
 
 	fclose(file);
-
 	return tmp;
 }
 

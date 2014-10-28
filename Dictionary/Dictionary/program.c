@@ -14,6 +14,9 @@ int main(int argc, const char * argv[])
 	readAndFill(&a);
 	printf("Finished filling array with .txt content..\n");
 
+	printf("%s\n", a.array[0].word);
+	printf("%s\n", a.array[0].translation);
+
 
 	// Free array
 	freeArray(&a);
@@ -42,5 +45,3 @@ int main(int argc, const char * argv[])
 
 // Print elements
 
-//printf("%s\n", a.array[1].translation);
-//printf("%s\n", a.array[1].word);

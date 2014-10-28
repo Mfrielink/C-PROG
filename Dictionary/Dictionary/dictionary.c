@@ -34,28 +34,17 @@ void freeArray(Array *a)
 }
 
 void readAndFill(Array *a){
-	char * check = "";
-	char * tmp = "a";
+	char tmp[80] = "a";
 	relatie1 x;
 
-	while (1){ //strcmp(check,tmp) != 0
-		tmp = readLine(a->used + 1);
-		
-		if (strcmp(check, tmp) == 0){
-			strcpy_s(check,2, " ");
-			printf("Done reading file..\n");
-			break;
-		}else{
-			check = readLine(a->used + 1);
-		}
+	while (readLine(a->used + 1) != "empty"){ //strcmp(check,tmp) != 0
+		strcpy_s(tmp,80, readLine(a->used + 1));
 
 		x.word = malloc(32 * sizeof(char));
-		printf("tmp1 = %s\n", tmp);
-		x.word = getWord(tmp);
-		printf("tmp2 = %s\n", tmp);
-
 		x.translation = malloc(32 * sizeof(char));
-		x.translation = getTranslation(tmp);
+
+		strcpy_s(x.word,32, getWord(tmp));
+		strcpy_s(x.translation,32, getTranslation(tmp));
 
 		if (a->used == a->size)
 		{
@@ -66,8 +55,8 @@ void readAndFill(Array *a){
 		a->array[a->used] = x;
 		a->used++;
 
-		printf(" tmp: %s\n", tmp);
-		printf(" check: %s\n", check);
+		printf("%s = ", x.word);
+		printf("%s\n", x.translation);
 	}
 }
 

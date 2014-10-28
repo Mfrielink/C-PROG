@@ -1,20 +1,24 @@
-﻿Build started 27-10-2014 20:44:07.
-     1>Project "C:\Users\Martijn\Documents\Visual Studio 2013\Projects\Dictionary\Dictionary\Dictionary.vcxproj" on node 2 (Build target(s)).
+﻿Build started 28-10-2014 09:36:12.
+     1>Project "C:\Users\Gebruiker\Documents\GitHub\C-PROG\Dictionary\Dictionary\Dictionary.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt dictionary.c
-         dictionary.c
-     1>c:\users\martijn\documents\visual studio 2013\projects\dictionary\dictionary\dictionary.c(13): warning C4029: declared formal parameter list different from definition
-     1>c:\users\martijn\documents\visual studio 2013\projects\dictionary\dictionary\dictionary.c(42): warning C4013: 'readLine' undefined; assuming extern returning int
-     1>c:\users\martijn\documents\visual studio 2013\projects\dictionary\dictionary\dictionary.c(42): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
-     1>c:\users\martijn\documents\visual studio 2013\projects\dictionary\dictionary\dictionary.c(49): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt fileManager.c
+         fileManager.c
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(11): warning C4047: '!=' : 'errno_t' differs in levels of indirection from 'void *'
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(13): warning C4098: 'readFile' : 'void' function returning a value
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(31): warning C4047: '!=' : 'errno_t' differs in levels of indirection from 'void *'
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(33): warning C4047: 'return' : 'char *' differs in levels of indirection from 'int'
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(59): warning C4047: '!=' : 'errno_t' differs in levels of indirection from 'void *'
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(61): warning C4098: 'writeFile' : 'void' function returning a value
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(56): warning C4101: 'line' : unreferenced local variable
+     1>c:\users\gebruiker\documents\github\c-prog\dictionary\dictionary\filemanager.c(77): warning C4013: 'strlen' undefined; assuming extern returning int
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Martijn\Documents\Visual Studio 2013\Projects\Dictionary\Debug\Dictionary.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Martijn\Documents\Visual Studio 2013\Projects\Dictionary\Debug\Dictionary.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Martijn\Documents\Visual Studio 2013\Projects\Dictionary\Debug\Dictionary.lib" /MACHINE:X86 Debug\dictionary.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Gebruiker\Documents\GitHub\C-PROG\Dictionary\Debug\Dictionary.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Gebruiker\Documents\GitHub\C-PROG\Dictionary\Debug\Dictionary.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Gebruiker\Documents\GitHub\C-PROG\Dictionary\Debug\Dictionary.lib" /MACHINE:X86 Debug\dictionary.obj
          Debug\program.obj
          Debug\fileManager.obj
          Debug\util.obj
-         Dictionary.vcxproj -> C:\Users\Martijn\Documents\Visual Studio 2013\Projects\Dictionary\Debug\Dictionary.exe
-     1>Done Building Project "C:\Users\Martijn\Documents\Visual Studio 2013\Projects\Dictionary\Dictionary\Dictionary.vcxproj" (Build target(s)).
+         Dictionary.vcxproj -> C:\Users\Gebruiker\Documents\GitHub\C-PROG\Dictionary\Debug\Dictionary.exe
+     1>Done Building Project "C:\Users\Gebruiker\Documents\GitHub\C-PROG\Dictionary\Dictionary\Dictionary.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.82
+Time Elapsed 00:00:00.30
