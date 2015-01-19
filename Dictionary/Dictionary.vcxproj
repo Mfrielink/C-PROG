@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dictionary.c" />
+    <ClCompile Include="menu.c" />
     <ClCompile Include="program.c" />
     <ClCompile Include="fileManager.c" />
     <ClCompile Include="util.c" />
@@ -88,9 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dictionary.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="program.h" />
     <ClInclude Include="fileManager.h" />
-    <ClInclude Include="struct.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -5,15 +5,16 @@
     <ClCompile Include="program.c" />
     <ClCompile Include="fileManager.c" />
     <ClCompile Include="util.c" />
+    <ClCompile Include="menu.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="dictionary.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="struct.h" />
     <ClInclude Include="dictionary.h" />
     <ClInclude Include="program.h" />
     <ClInclude Include="fileManager.h" />
     <ClInclude Include="util.h" />
+    <ClInclude Include="menu.h" />
   </ItemGroup>
 </Project>
